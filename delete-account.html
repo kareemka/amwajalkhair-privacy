@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-```
+
 <title>طلب حذف الحساب</title>
 
 <style>
@@ -32,7 +32,7 @@
     }
 
     .card {
-        background: #ffffff;
+        background: #fff;
         border-radius: 18px;
         padding: 35px;
         box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
@@ -44,7 +44,7 @@
         margin: 0 auto 20px;
         border-radius: 16px;
         background: #2563eb;
-        color: white;
+        color: #fff;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -179,22 +179,17 @@
 
     <p class="description">
         إذا كنت ترغب في حذف حسابك من التطبيق، يرجى تعبئة النموذج أدناه.
-        سيتم مراجعة طلبك والتحقق من بيانات الحساب قبل تنفيذ عملية الحذف.
+        سيتم مراجعة الطلب والتحقق من بيانات الحساب قبل تنفيذ عملية الحذف.
     </p>
 
     <div class="notice">
         <strong>تنبيه:</strong>
         سيتم مراجعة طلب حذف الحساب من قبل إدارة التطبيق.
-        قد يتم الاحتفاظ ببعض البيانات إذا كان ذلك مطلوبًا بموجب القانون.
+        بعد تنفيذ الحذف قد لا يمكن استعادة الحساب أو البيانات المرتبطة به.
     </div>
 
-    <!--
-        ضع بريدك الإلكتروني بدل:
-        YOUR_EMAIL@example.com
-    -->
-
     <form
-        action="https://formsubmit.co/amuagalkheer@gmail.com"
+        action="https://formsubmit.co/YOUR_EMAIL@example.com"
         method="POST"
     >
 
@@ -218,41 +213,57 @@
             value="true"
         >
 
-        <!-- بعد الإرسال يرجع المستخدم إلى هذه الصفحة -->
-        <!-- غيّر الرابط إلى رابط صفحتك الحقيقي -->
+        <!-- ضع هنا رابط صفحة النجاح الخاصة بك -->
 
         <input
             type="hidden"
             name="_next"
-            value="https://github.com/kareemka/amwajalkhair-privacy/blob/main/delete-account.html"
+            value="https://example.com/delete-account-success.html"
         >
 
+        <!-- اسم الموظف -->
+
         <div class="form-group">
-            <label for="name">اسم الموظف</label>
+
+            <label for="name">
+                اسم الموظف
+            </label>
 
             <input
                 type="text"
                 id="name"
                 name="اسم الموظف"
-                placeholder="أدخل اسمك"
+                placeholder="أدخل اسم الموظف"
                 required
             >
+
         </div>
 
+        <!-- اسم المستخدم -->
+
         <div class="form-group">
-            <label for="email">البريد الإلكتروني للحساب</label>
+
+            <label for="username">
+                اسم المستخدم
+            </label>
 
             <input
-                type="email"
-                id="email"
-                name="البريد الإلكتروني"
-                placeholder="example@email.com"
+                type="text"
+                id="username"
+                name="اسم المستخدم"
+                placeholder="أدخل اسم المستخدم الخاص بالحساب"
                 required
             >
+
         </div>
 
+        <!-- رقم الموظف -->
+
         <div class="form-group">
-            <label for="employeeId">رقم الموظف</label>
+
+            <label for="employeeId">
+                رقم الموظف
+            </label>
 
             <input
                 type="text"
@@ -261,30 +272,39 @@
                 placeholder="أدخل رقم الموظف"
                 required
             >
+
         </div>
 
+        <!-- سبب الحذف -->
+
         <div class="form-group">
-            <label for="reason">سبب طلب الحذف (اختياري)</label>
+
+            <label for="reason">
+                سبب طلب الحذف (اختياري)
+            </label>
 
             <textarea
                 id="reason"
-                name="سبب الطلب"
+                name="سبب طلب الحذف"
                 placeholder="يمكنك كتابة سبب طلب حذف الحساب"
             ></textarea>
+
         </div>
+
+        <!-- التأكيد -->
 
         <label class="checkbox">
 
             <input
                 type="checkbox"
                 name="تأكيد الطلب"
-                value="أؤكد أنني صاحب الحساب وأطلب حذفه"
+                value="أؤكد أنني صاحب الحساب وأطلب حذف حسابي"
                 required
             >
 
             <span>
-                أؤكد أنني صاحب الحساب وأطلب حذف حسابي والبيانات
-                المرتبطة به.
+                أؤكد أنني صاحب الحساب وأطلب حذف حسابي
+                والبيانات المرتبطة به.
             </span>
 
         </label>
@@ -296,11 +316,11 @@
     </form>
 
     <div class="footer">
-        سيتم إرسال طلبك إلى إدارة التطبيق لمراجعته.
+        سيتم إرسال الطلب إلى إدارة التطبيق لمراجعته.
     </div>
 
 </div>
-```
+
 
 </div>
 
